@@ -48,50 +48,49 @@ const certificates = [
   {
     title: "Claude 101",
     issuer: "Anthropic",
-    image: "/certificates/claude-101.png",
+    image: "/clude 101 certificate.png",
   },
   {
     title: "Claude Code 101",
     issuer: "Anthropic",
-    image: "/certificates/claude-code-101.png",
+    image: "/clude 101 intermediate.png",
   },
   {
     title: "AI Fluency for Builders",
     issuer: "CodePath & Anthropic",
-    image: "/certificates/ai-fluency-builders.png",
+    image: "/ai fluency builders.png",
   },
   {
     title: "AI Capabilities & Limitations",
     issuer: "Anthropic",
-    image: "/certificates/ai-capabilities-limitations.png",
+    image: "/ai fluency and capability limitations.png",
   },
   {
     title: "AI Fluency for Students",
     issuer: "Anthropic",
-    image: "/certificates/ai-fluency-students.png",
+    image: "/ai fluency for students.png",
   },
   {
     title: "AI Fluency for Educators",
     issuer: "Anthropic",
-    image: "/certificates/ai-fluency-educators.png",
+    image: "/ai fluency for educators.png",
   },
   {
     title: "Teaching the AI Fluency Framework",
     issuer: "Anthropic",
-    image: "/certificates/teaching-ai-fluency.png",
+    image: "/teaching the ai fluency.png",
   },
   {
     title: "AI Fluency for Small Businesses",
     issuer: "PayPal & Anthropic",
-    image: "/certificates/ai-small-business.png",
+    image: "/small business course.png",
   },
   {
     title: "AI Fluency for Nonprofits",
     issuer: "Anthropic",
-    image: "/certificates/ai-nonprofits.png",
+    image: "/ai fluency non profits.png",
   },
 ];
-
 export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#050816] text-white">
@@ -186,14 +185,14 @@ export default function Home() {
                 View Projects
               </a>
 
-              <a
-                href="/Md-Forhad-Mia-CV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="secondary-button rounded-xl border border-cyan-400/30 bg-cyan-400/5 px-6 py-3 font-semibold text-cyan-200"
-              >
-                View / Download CV ↗
-              </a>
+<a
+  href="/Md-Forhad-Mia-CV.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="secondary-button rounded-xl border border-cyan-400/30 bg-cyan-400/5 px-6 py-3 font-semibold text-cyan-200"
+>
+  View CV ↗
+</a>
 
               <a
                 href="https://www.linkedin.com/in/md-forhad-mia-076183262/"
@@ -395,54 +394,78 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* CERTIFICATES */}
-      <section
-        id="certifications"
-        className="border-y border-white/5 bg-white/[0.02] py-24"
-      >
-        <Container>
-          <SectionTitle
-            label="CERTIFICATIONS"
-            title="AI Learning & Certifications"
-          />
+{/* CERTIFICATES */}
+<section
+  id="certifications"
+  className="border-y border-white/5 bg-white/[0.02] py-24"
+>
+  <Container>
+    <SectionTitle
+      label="CERTIFICATIONS"
+      title="AI Learning & Certifications"
+    />
 
-          <p className="mx-auto mt-6 max-w-2xl text-center leading-7 text-slate-400">
-            Selected certificates from my continuous learning in Artificial
-            Intelligence, AI fluency and AI development.
-          </p>
+    <p className="mx-auto mt-6 max-w-2xl text-center leading-7 text-slate-400">
+      Certificates from my continuous learning journey in Artificial
+      Intelligence, AI fluency, Claude and AI development.
+    </p>
 
-          <div className="mt-12 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
-            {certificates.map((certificate) => (
-              <div
-                key={certificate.title}
-                className="animated-card group overflow-hidden rounded-3xl border border-white/10 bg-[#080d1d]"
-              >
-                <div className="overflow-hidden">
-                  <img
-                    src={certificate.image}
-                    alt={`${certificate.title} certificate`}
-                    className="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105"
-                  />
-                </div>
+    <div className="mt-12 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
+      {certificates.map((certificate, index) => (
+        <article
+          key={certificate.title}
+          className="animated-card group relative overflow-hidden rounded-3xl border border-white/10 bg-[#080d1d]"
+        >
+          {/* Certificate Image */}
+          <div className="relative overflow-hidden bg-white">
+            <img
+              src={certificate.image}
+              alt={`${certificate.title} certificate`}
+              loading="lazy"
+              className="aspect-[4/3] w-full object-contain p-2 transition duration-700 ease-out group-hover:scale-[1.04]"
+            />
 
-                <div className="p-6">
-                  <p className="text-xs font-bold uppercase tracking-widest text-cyan-400">
-                    Certificate of Completion
-                  </p>
+            {/* Image Hover Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#050816]/30 via-transparent to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
 
-                  <h3 className="mt-3 text-xl font-bold transition group-hover:text-cyan-300">
-                    {certificate.title}
-                  </h3>
-
-                  <p className="mt-2 text-sm text-slate-400">
-                    {certificate.issuer}
-                  </p>
-                </div>
-              </div>
-            ))}
+            {/* Certificate Number */}
+            <div className="absolute right-4 top-4 rounded-full border border-white/10 bg-[#050816]/80 px-3 py-1 text-xs font-bold text-cyan-300 backdrop-blur-md">
+              {String(index + 1).padStart(2, "0")}
+            </div>
           </div>
-        </Container>
-      </section>
+
+          {/* Certificate Details */}
+          <div className="relative p-6">
+            <div className="mb-4 flex items-center gap-2">
+              <span className="h-2 w-2 rounded-full bg-cyan-400" />
+
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-cyan-400">
+                Certificate of Completion
+              </p>
+            </div>
+
+            <h3 className="text-xl font-bold text-white transition duration-300 group-hover:text-cyan-300">
+              {certificate.title}
+            </h3>
+
+            <div className="mt-4 flex items-center justify-between gap-4">
+              <p className="text-sm text-slate-400">
+                {certificate.issuer}
+              </p>
+
+              <span className="text-sm text-cyan-400 opacity-0 transition duration-300 group-hover:translate-x-1 group-hover:opacity-100">
+                View ↗
+              </span>
+            </div>
+          </div>
+
+          {/* Bottom Glow */}
+          <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-500 group-hover:w-full" />
+        </article>
+      ))}
+    </div>
+  </Container>
+</section>
 
       {/* EDUCATION */}
 <section id="education" className="py-24">
