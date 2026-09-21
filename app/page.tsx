@@ -445,38 +445,114 @@ export default function Home() {
       </section>
 
       {/* EDUCATION */}
-      <section id="education" className="py-24">
-        <Container>
-          <SectionTitle label="EDUCATION" title="Academic Background" />
+<section id="education" className="py-24">
+  <Container>
+    <SectionTitle label="EDUCATION" title="Academic Background" />
 
-          <div className="glass-card mx-auto mt-12 max-w-4xl rounded-3xl border border-white/10 bg-[#080d1d] p-9">
-            <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-center">
-              <div>
-                <p className="text-sm font-bold uppercase tracking-widest text-cyan-400">
-                  Bachelor&apos;s Degree
-                </p>
+    <div className="mx-auto mt-12 grid max-w-4xl gap-6">
 
-                <h3 className="mt-3 text-2xl font-bold">
-                  B.Sc. in Computer Science & Engineering
-                </h3>
+      {/* BACHELOR */}
+      <div className="glass-card rounded-3xl border border-cyan-400/20 bg-[#080d1d] p-8 md:p-9">
+        <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-center">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-widest text-cyan-400">
+              Bachelor&apos;s Degree
+            </p>
 
-                <p className="mt-3 text-lg text-slate-400">
-                  Presidency University
-                </p>
+            <h3 className="mt-3 text-2xl font-bold">
+              B.Sc. in Computer Science & Engineering
+            </h3>
 
-                <p className="mt-3 text-slate-500">CGPA: 3.55 / 4.00</p>
-              </div>
+            <p className="mt-3 text-lg text-slate-400">
+              Presidency University
+            </p>
 
-              <div className="w-fit rounded-2xl border border-cyan-400/20 bg-cyan-400/5 px-6 py-4 text-center">
-                <p className="text-xs uppercase tracking-wider text-slate-500">
-                  Expected Graduation
-                </p>
-                <p className="mt-1 text-2xl font-black text-cyan-300">2026</p>
-              </div>
-            </div>
+            <p className="mt-3 text-slate-500">
+              CGPA: 3.60 / 4.00
+            </p>
           </div>
-        </Container>
-      </section>
+
+          <div className="w-fit rounded-2xl border border-cyan-400/20 bg-cyan-400/5 px-6 py-4 text-center">
+            <p className="text-xs uppercase tracking-wider text-slate-500">
+              Expected Graduation
+            </p>
+
+            <p className="mt-1 text-2xl font-black text-cyan-300">
+              2026
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* HSC */}
+      <div className="glass-card rounded-3xl border border-white/10 bg-[#080d1d] p-8 md:p-9">
+        <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-center">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-widest text-cyan-400">
+              Higher Secondary Certificate (HSC)
+            </p>
+
+            <h3 className="mt-3 text-2xl font-bold">
+              Juranpur Adarsha Degree College
+            </h3>
+
+            <p className="mt-3 text-lg text-slate-400">
+              Science
+            </p>
+
+            <p className="mt-3 text-slate-500">
+              GPA: 5.00 / 5.00
+            </p>
+          </div>
+
+          <div className="w-fit rounded-2xl border border-white/10 bg-white/5 px-6 py-4 text-center">
+            <p className="text-xs uppercase tracking-wider text-slate-500">
+              Completed
+            </p>
+
+            <p className="mt-1 text-2xl font-black text-cyan-300">
+              2021
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* SSC */}
+      <div className="glass-card rounded-3xl border border-white/10 bg-[#080d1d] p-8 md:p-9">
+        <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-center">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-widest text-cyan-400">
+              Secondary School Certificate (SSC)
+            </p>
+
+            <h3 className="mt-3 text-2xl font-bold">
+              Adhara High School
+            </h3>
+
+            <p className="mt-3 text-lg text-slate-400">
+              Science
+            </p>
+
+            <p className="mt-3 text-slate-500">
+              GPA: 4.89 / 5.00
+            </p>
+          </div>
+
+          <div className="w-fit rounded-2xl border border-white/10 bg-white/5 px-6 py-4 text-center">
+            <p className="text-xs uppercase tracking-wider text-slate-500">
+              Completed
+            </p>
+
+            <p className="mt-1 text-2xl font-black text-cyan-300">
+              2019
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </Container>
+</section>
 
       {/* POSTS + CAPSTONE */}
       <section
