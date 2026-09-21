@@ -650,6 +650,14 @@ export default function Home() {
               >
                 Email Me
               </a>
+              <a
+  href="https://calendly.com/forhadhossain1595/30min"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="primary-button rounded-xl bg-cyan-400 px-6 py-3 font-bold text-slate-950"
+>
+  Book a Meeting ↗
+</a>
 
               <a
                 href="https://www.linkedin.com/in/md-forhad-mia-076183262/"
